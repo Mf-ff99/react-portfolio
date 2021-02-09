@@ -6,7 +6,7 @@ const Projects = () => {
                 <h1>Projects</h1>
             </div>
             <div className='project img-left'>
-                <span>project images</span>
+                <img src='/assets/images/jordy-mockup.jpg' alt='Jordy.com Application mockup' />
                 <div className='project-info-container'>
                     <div className='project-info-header'>
                         <h3>Jordan Klein Film & Video</h3>
@@ -27,15 +27,17 @@ const Projects = () => {
                 </div>
             </div>
             <div className='project img-right'>
-                <span>project images</span>
+                <img src='/assets/images/ways-mockup.jpg' alt='Ways! Application mockup' />
                 <div className='project-info-container'>
                     <div className='project-info-header'>
                         <h3>Ways! | A Travel Companion</h3>
-                        <span>Live App</span>
-                        <span>Github</span>
+                        <div>
+                            <span>Live App</span>
+                            <span>Github</span>
+                        </div>
                     </div>
                     <div className='project-tech'>
-                    <ul>
+                        <ul>
                             <li>ReactJS</li>
                             <li>Vanilla CSS</li>
                             <li>Express.js</li>
@@ -44,7 +46,7 @@ const Projects = () => {
                         </ul>
                     </div>
                     <div className='project-info-p'>
-                        A gorgeous and user-first web application, Ways! is designed to meet the needs of those who travel often and plan ahead. Built from the ground up utilizing ReactJS, JavaScript, vanilla CSS, Node.js, and Express, this application was developed by myself and a team of three others over the course of three weeks. 
+                        A gorgeous and user-first web application, Ways! is designed to meet the needs of those who travel often and plan ahead. Built from the ground up utilizing ReactJS, JavaScript, vanilla CSS, Node.js, and Express, this application was developed by myself and a team of three others over the course of three weeks.
                     </div>
                 </div>
             </div>
@@ -57,7 +59,7 @@ const Projects = () => {
                         <span>Github</span>
                     </div>
                     <div className='project-tech'>
-                    <ul>
+                        <ul>
                             <li>ReactJS</li>
                             <li>Styled-Components</li>
                             <li>Sass</li>
@@ -65,7 +67,7 @@ const Projects = () => {
                         </ul>
                     </div>
                     <div className='project-info-p'>
-                        The first of its kind, lightningjib.com showcases  
+                        The first of its kind, lightningjib.com showcases
                     </div>
                 </div>
             </div>

@@ -11,14 +11,51 @@
         font-size: 32px;
         background-color: transparent;
     }
+
+    .project-info-header {
+        @include flexCenter(row)
+    }
+
     .project {
         @include flexCenter(column);
+        margin: 20px;
 
-        @media (min-width: 658px) {
-            flex-direction: row;
+
+        .project-info-container {
+            @include flexCenter(column);
+            span {
+                margin: 5px;
+            }
+        }
+        
+        ul {
+            list-style: none;
+            @include flexCenter(row);
+            li {
+                border: 1px solid white;
+                width: fit-content;
+                padding: 5px;
+                margin: 5px;
+                border-radius: 5px;
+                transition: .8s ease-in-out;
+                &:hover {
+                    background-color: $secondary-txt;
+                    color: $primary-bg;
+                    transition: .7s ease-in-out;
+                }
+            }
+        }
+        img {
+            max-width: 400px;
+            border-radius: 5px;
+            padding: 10px;
         }
         .project-info-p {
+            text-align: left;
             max-width: 400px;
+        }
+        @media (min-width: 658px) {
+            flex-direction: row;
         }
     }
 

@@ -5,7 +5,7 @@
 }
 
 header {
-  height: 99px;
+  height: 79px;
 }
 
 .hero {
@@ -199,7 +199,40 @@ header {
   background-color: transparent;
 }
 
+.projects-container .project-info-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .projects-container .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.projects-container .project .project-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,6 +248,57 @@ header {
           flex-direction: column;
 }
 
+.projects-container .project .project-info-container span {
+  margin: 5px;
+}
+
+.projects-container .project ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projects-container .project ul li {
+  border: 1px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  -webkit-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+}
+
+.projects-container .project ul li:hover {
+  background-color: #95b2b8;
+  color: #14181e;
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+}
+
+.projects-container .project img {
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.projects-container .project .project-info-p {
+  text-align: left;
+  max-width: 400px;
+}
+
 @media (min-width: 658px) {
   .projects-container .project {
     -webkit-box-orient: horizontal;
@@ -222,10 +306,6 @@ header {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-.projects-container .project .project-info-p {
-  max-width: 400px;
 }
 
 .projects-container .img-right {

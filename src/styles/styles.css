@@ -56,7 +56,42 @@ header {
 }
 
 .hero .hero-info-container span {
-  padding: 10px;
+  margin: 30px;
+  font-size: 30px;
+  -webkit-transition-property: font-style;
+  transition-property: font-style;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.hero .hero-info-container span:nth-child(2):hover {
+  -webkit-transition-property: font-style;
+  transition-property: font-style;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  color: #95b2b8;
+  font-style: oblique;
+}
+
+.hero .hero-info-container span:nth-child(1):hover {
+  -webkit-transition-property: font-style;
+  transition-property: font-style;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  color: #95b2b8;
+  font-style: oblique;
 }
 
 html {

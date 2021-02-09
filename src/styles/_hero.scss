@@ -1,6 +1,7 @@
 @import 'mixins';
 $primary-bg: #14181e;
 $primary-txt: #ffffea;
+$secondary-txt: #95b2b8;
 
 .App {
     top: 0;
@@ -29,7 +30,32 @@ header {
     .hero-info-container {
         @include flexCenter(row);
         span {
-            padding: 10px;
+            margin: 30px;
+            font-size: 30px;
+            transition-property: font-style;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            &:nth-child(2) {
+                &:hover {
+                    transition-property: font-style;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+                    color: $secondary-txt;
+                    font-style: oblique;
+                }
+            }
+            &:nth-child(1) {
+                &:hover {
+                    transition-property: font-style;
+                    transition-duration: 1s;
+                    transition-timing-function: ease;
+                    transition-delay: 0s;
+                    color: $secondary-txt;
+                    font-style: oblique;
+                }
+            }
         }
     }
 }

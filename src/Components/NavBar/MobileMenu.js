@@ -15,7 +15,7 @@ const UL = styled.ul`
     margin-left: 0;
     padding-left: 0;
     z-index: 1000;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 18px;
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Comfortaa', cursive;
@@ -79,13 +79,13 @@ const UL = styled.ul`
         background-color: transparent;
         position: fixed;
         transform: ${({open}) => open ? 'translateY(0%)' : 'translateY(-100%)'};
-        top: 0;
+        /* top: 0; */
         right: 0;
         height: 350px;
         width: 200px !important;
-        border-radius: 0 0 20px 20px;
-        border-left: 1px solid #333;
-        border-bottom: 1px solid #333;
+        border-radius: 0 0 2px 20px;
+        border: 1px 0 0 1px solid #333;
+        /* border-bottom: 1px solid #333; */
         /* box-shadow: 10px 10px 10px 10px whitesmoke; */
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
@@ -110,11 +110,16 @@ const UL = styled.ul`
             justify-content: center !important;
         }
     }
+    @media (max-width: 658px) {
+        background-color: #95b2b8 !important;
+        opacity: .8;
+    }
     @media (min-width: 769px) {
         li.mobile a img{
             display: none !important;
             /* border: 1px solid red; */
         }
+
 
     }
 `
@@ -129,13 +134,13 @@ class MobileNav extends React.Component {
     }
     
     showTargetElement = (open) => {
-          if(open = true) enableBodyScroll(this.targetElement);
+        //   if(open = true) enableBodyScroll(this.targetElement);
          
       } 
     render() {
         let open = this.props.open
-        if(open) disableBodyScroll(this.targetElement)
-        if(!open) clearAllBodyScrollLocks()
+        // if(open) disableBodyScroll(this.targetElement)
+        // if(!open) clearAllBodyScrollLocks()
         return (
             <UL id='mobile-nav' open={open}>
             <li className="right-side-nav">

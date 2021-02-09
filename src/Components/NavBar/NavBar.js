@@ -6,6 +6,7 @@ const StyledLogo = styled.div`
 
 display: flex;
 flex-direction: column;
+justify-content: center;
 align-items: center;
 padding-right: 10px;
 /* font-family: 'Montserrat', sans-serif; */
@@ -13,7 +14,11 @@ font-family: 'Comfortaa', cursive;
 font-weight: 600;
 font-size: 15px;
 margin-left: 20px;
+/* margin-top: 20px; */
 z-index: 10;
+@media (min-width: 658px) {
+    margin-top: 40px;
+}
 img {
     padding: 0;
     height: 90px; 
@@ -29,8 +34,12 @@ img {
 
 a {
         /* margin-left: 20px; */
+        
         color: #ffffea;
-        font-size: 40px;
+        font-size: 30px;
+        @media (min-width: 658px) {
+            font-size: 40px;
+        }
         /* color: black !important; */
     }
     
@@ -42,6 +51,7 @@ a {
     }
 
     span {
+        /* font-size: 20px; */
         &:nth-child(2) {
                 transition-property: font-style;
                 transition-duration: 1s;
@@ -59,15 +69,25 @@ a {
     }
 
     .colored-logo {
-        font-size: 20px;
+        font-size: 24px;
         padding: 5px;
+        width: 145px;
         color: #95B2B8;
         font-style: oblique;
         letter-spacing: 2px;
+        @media (max-width: 658px) {
+            display: none;
+        }
+        @media (min-width: 658px) {
+            font-size: 20px;
+            width: fit-content;
+        }
     }
 
     i {
+
         transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+        border-radius: 50px;
         &:hover {
             transition: 2s cubic-bezier(0.215, 0.610, 0.355, 1);
             transform: rotate(720deg);
@@ -101,6 +121,7 @@ const NavStyled = styled.nav`
     
     .logo {
         padding-left: 10px;
+        margin-top: 10px;
         /* padding: 15px 0; */
     }
 
@@ -132,6 +153,8 @@ const NavStyled = styled.nav`
     .logo span {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
         /* width: 20px; */
 

@@ -5,19 +5,30 @@ import Burger from './Burger'
 const StyledLogo = styled.div`
 
 display: flex;
+flex-direction: column;
 align-items: center;
 padding-right: 10px;
 font-family: 'Montserrat', sans-serif;
 font-weight: 600;
 font-size: 15px;
+margin-left: 20px;
 img {
     padding: 0;
     height: 90px; 
 }
 
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 200px;
+}
+
 a {
-        margin-left: 20px;
+        /* margin-left: 20px; */
         color: #ffffea;
+        font-size: 40px;
         /* color: black !important; */
     }
     
@@ -26,6 +37,12 @@ a {
         display: flex;
         flex-wrap: wrap;
         
+    }
+
+    .colored-logo {
+        font-size: 20px;
+        padding: 5px;
+        color: #95B2B8;
     }
 
     @media (min-width: 768px) {
@@ -109,12 +126,25 @@ export default class Nav extends React.Component {
             <NavStyled>
                 <StyledLogo>
 
-                <span className="logo"><a href='/'>Mark Force</a></span>
-          
+                    <span className="logo"><a href='/'>Mark Force</a></span>
+                    <span className='colored-logo'>Full Stack Web Developer</span>
+                    <div className='contact-icons'>
+                        <a href='mailto:force.j.mark@gmail.com'>
+                            <i class="fas fa-envelope-square fa-md"></i>
+                        </a>
+
+                        <a href='https://github.com/Mf-ff99' target='_blank' rel='noopener noreferrer'>
+                            <i class="fab fa-github-square fa-md"></i>
+                        </a>
+                        <a href='https://www.linkedin.com/in/mark-j-force/' target='_blank' rel='noopener noreferrer'>
+                            <i class="fab fa-linkedin fa-md"></i>
+                        </a>
+                    </div>
+
                 </StyledLogo>
-                
+
                 <Burger />
-                
+
             </NavStyled>
         )
     }

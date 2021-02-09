@@ -79,7 +79,11 @@ header {
             transition-timing-function: ease;
             transition-delay: 0s;
             // width: 500px;
-            letter-spacing: 9px;
+            letter-spacing: 13px;
+            @media (min-width: 658px) {
+                letter-spacing: 30px;
+                font-size: 32px;
+            }
             &:nth-child(2) {
                 &:hover {
                     transition-property: font-style;

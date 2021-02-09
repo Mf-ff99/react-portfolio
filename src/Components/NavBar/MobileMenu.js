@@ -23,7 +23,7 @@ const UL = styled.ul`
     padding-top: 10px;
 
     li {
-        color: black !important;
+        /* color: black !important; */
         padding: 18px 10px;
         /* min-width: 110px; */
         &:nth-child(4) {
@@ -40,7 +40,7 @@ const UL = styled.ul`
     }
     
     a {
-        color: black !important;
+        /* color: black !important; */
     }
 
     .logo-text-left a {
@@ -71,14 +71,14 @@ const UL = styled.ul`
         align-items: center !important;
         background-color: #0D2538;
         position: fixed;
-        transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
+        transform: ${({open}) => open ? 'translateY(0)' : 'translateY(100%)'};
         top: 0;
         right: 0;
         height: 100vh;
         width: 75vw !important;
         border-left: 1px solid black;
-        border-radius: 3px;
-
+        border-radius: 10px 10px 0 0;
+        box-shadow: 10px 10px 10px 10px whitesmoke;
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
@@ -86,10 +86,10 @@ const UL = styled.ul`
         /* scroll-behavior: unset; */
 
     a {
-        color: black !important;
+        color: #ffffea !important;
     }
         li {
-            color: black;
+            color: #ffffea;
         }
 
         .logo {

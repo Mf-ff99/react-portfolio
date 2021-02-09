@@ -3,9 +3,6 @@
 @import 'mixins';
 @import 'hero';
 
-.hero{
-    // @include flexCenter();
-    // background: $primaryBG;
-    font-size: 20px;
-    height: 100vh;
+html {
+    overflow-x: hidden;
 }

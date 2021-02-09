@@ -10,13 +10,14 @@ const StyledLogo = styled.div`
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 15px;
-        img {
+    img {
         padding: 0;
         height: 90px; 
     }
     
     a {
-        color: black !important;
+        color: #ffffea;
+        /* color: black !important; */
     }
 
     .logo-text-left a {
@@ -36,7 +37,7 @@ const NavStyled = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 60px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -44,14 +45,16 @@ const NavStyled = styled.nav`
     flex-direction: row;
     list-style: none;
     /* width: 90%; */
-    background-color: whitesmoke;
+    background-color: #14181e;
+    color: #ffffea;
     z-index: 0;
     /* margin: 0; */
     border-bottom: 2px solid #f1f1f1;
     font-size: 18px;
-
+    
     .logo {
-        padding: 15px 0;
+        padding-left: 10px;
+        /* padding: 15px 0; */
     }
 
     ul {
@@ -61,7 +64,7 @@ const NavStyled = styled.nav`
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-        background-color: whitesmoke;
+        background-color: #14181e;
     }
 
     li {
@@ -69,18 +72,21 @@ const NavStyled = styled.nav`
     }
 
     .logo {
-        height: 90px;
-        width: 90px;
+        /* height: 90px;
+        width: 90px; */
         margin: 0;
         padding: 0;
-
+        a {
+            text-decoration: none !important;
+        }
     }
 
     .logo span {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 20px;
+        /* width: 20px; */
+
     }
 
     .logo-text-left a{
@@ -89,7 +95,7 @@ const NavStyled = styled.nav`
 
     @media (max-width: 770px) {
         justify-content: space-between;
-        padding: 10px;
+        /* padding: 10px; */
         width: 100vw;
     }
 `;

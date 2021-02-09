@@ -12,6 +12,7 @@ font-family: 'Montserrat', sans-serif;
 font-weight: 600;
 font-size: 15px;
 margin-left: 20px;
+z-index: 10;
 img {
     padding: 0;
     height: 90px; 
@@ -60,6 +61,8 @@ a {
         font-size: 20px;
         padding: 5px;
         color: #95B2B8;
+        font-style: oblique;
+        letter-spacing: 2px;
     }
 
     @media (min-width: 768px) {
@@ -72,7 +75,7 @@ const NavStyled = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: 100px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -84,7 +87,7 @@ const NavStyled = styled.nav`
     color: #ffffea;
     z-index: 0;
     /* margin: 0; */
-    border-bottom: 2px solid #f1f1f1;
+    /* border-bottom: 2px solid #f1f1f1; */
     font-size: 18px;
     
     .logo {

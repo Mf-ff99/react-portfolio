@@ -10,13 +10,13 @@ $secondary-txt: #95b2b8;
 }
 
 header {
-    height: 70px;
+    height: 99px;
 }
 
 .hero {
     @include flexCenter(column);
     justify-content: flex-start;
-    padding-top: 200px;
+    // padding-top: 200px;
     background-color: $primary-bg;
     color: $primary-txt;
     right: 0;
@@ -25,28 +25,57 @@ header {
     width: 100vw;
     height: 100vh;
     min-height: 500px;
-    P {
-        margin-block-start: 0 !important;
-        margin-block-end: 0 !important;
-        max-width: 900px;
-        text-align: center;
-        font-size: 32px;
+    z-index: 1;
+    .hero-bg {
+        background-image: url('https://images.unsplash.com/photo-1488866022504-f2584929ca5f?auto=format&fit=crop&w=1486&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+  background-size: cover;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  opacity: .8;
+  z-index: 0;
+  background-attachment: initial;
+  width: 100vw;
+  height: 100vh;
+//   position: fixed;
+
     }
     .hero-info-container {
+        margin-top: 100px;
+        position: absolute;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        span span {
-
+        P {
+            margin-block-start: 0 !important;
+            margin-block-end: 0 !important;
+            max-width: 1000px;
+            text-align: center;
+            font-size: 22px;
+            padding: 7px;
+            // position: absolute;
+            // padding-top: 200px;
+            color: #9AE5E6;
+            @media (min-width: 658px) {
+                font-size: 32px;
+                padding: 5px;
+            }
+        }
+        span {
+            @include flexCenter(column);
+            text-align: center;
+        }
+        span {
             margin: 30px;
             font-size: 20px;
             transition-property: font-style;
             transition-duration: 1s;
             transition-timing-function: ease;
             transition-delay: 0s;
-            width: 500px;
-            // letter-spacing: 0.235px;
+            // width: 500px;
+            letter-spacing: 9px;
             &:nth-child(2) {
                 &:hover {
                     transition-property: font-style;
@@ -57,14 +86,7 @@ header {
                     font-style: oblique;
                     // letter-spacing: 0;
                 }
-                &:before {
-                    display: block;
-                    content: attr(title);
-                    font-weight: bold;
-                    height: 0;
-                    overflow: hidden;
-                    visibility: hidden;
-                }
+              
             }
             &:nth-child(1) {
                 &:hover {
@@ -74,16 +96,9 @@ header {
                     transition-delay: 0s;
                     color: $secondary-txt;
                     font-style: oblique;
-                    // letter-spacing: 0;
+                    // letter-spacing: 8px;
                 }
-                &:before {
-                    display: block;
-                    content: attr(title);
-                    font-weight: bold;
-                    height: 0;
-                    overflow: hidden;
-                    visibility: hidden;
-                }
+                
             }
             &:nth-child(3) {
                 &:hover {
@@ -95,14 +110,7 @@ header {
                     font-style: oblique;
                     // letter-spacing: .225px;
                 }
-                &:before {
-                    display: block;
-                    content: attr(title);
-                    font-weight: bold;
-                    height: 0;
-                    overflow: hidden;
-                    visibility: hidden;
-                }
+             
             }
         }
     }

@@ -36,8 +36,12 @@ header {
   opacity: .8;
   z-index: 0;
   background-attachment: initial;
-  width: 100vw;
-  height: 100vh;
+  @media (min-width: 658px) {
+      background-attachment: fixed;
+  }
+  width: 70vw;
+  height: 70vh;
+  min-height: 700px;
 //   position: fixed;
 
     }

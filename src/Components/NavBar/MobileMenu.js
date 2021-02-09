@@ -73,15 +73,17 @@ const UL = styled.ul`
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        background-color: #0D2538;
+        /* background-color: #0D2538; */
+        background-color: transparent;
         position: fixed;
         transform: ${({open}) => open ? 'translateY(0%)' : 'translateY(-100%)'};
         top: 0;
         right: 0;
         height: 350px;
         width: 200px !important;
+        border-radius: 0 0 20px 20px;
         border-left: 1px solid #333;
-        border-radius: 10px 10px 0 0;
+        border-bottom: 1px solid #333;
         /* box-shadow: 10px 10px 10px 10px whitesmoke; */
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;

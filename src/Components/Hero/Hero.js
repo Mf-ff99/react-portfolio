@@ -16,7 +16,9 @@ export default function Hero() {
                     <br />
                 I'M PASSIONATE ABOUT MAKING A DIFFERENCE THROUGH CODE
                 <br />
-                EXPLORE A FEW OF MY PROJECTS THROUGH THE MENU
+                AND I LOVE COLLABORATING, SHOOT ME AN EMAIL!
+                <br />
+                EXPLORE A FEW OF MY PROJECTS BELOW
                 </p>
                 </div>
 

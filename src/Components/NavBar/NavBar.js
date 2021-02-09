@@ -65,6 +65,14 @@ a {
         letter-spacing: 2px;
     }
 
+    i {
+        transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+        &:hover {
+            transition: 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+            transform: rotate(720deg);
+        }
+    }
+
     @media (min-width: 768px) {
         /* display: none !important; */
         /* color: red !important; */
@@ -102,7 +110,8 @@ const NavStyled = styled.nav`
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-        background-color: #14181e;
+        /* background-color: #14181e; */
+        background-color: transparent;
     }
 
     li {
@@ -126,6 +135,8 @@ const NavStyled = styled.nav`
         /* width: 20px; */
 
     }
+
+   
 
     .logo-text-left a{
         width: 120px !important;

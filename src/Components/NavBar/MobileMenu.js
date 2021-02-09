@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 
@@ -138,11 +139,11 @@ class MobileNav extends React.Component {
         return (
             <UL id='mobile-nav' open={open}>
             <li className="right-side-nav">
-                <a href="/work">NavItem</a>
+                <HashLink smooth to='#projects'>Projects</HashLink>
 
             </li>
             <li className="right-side-nav end">
-                <a href="/about">About</a>
+                <HashLink smooth to='#about'>About</HashLink>
 
             </li>
         </UL>

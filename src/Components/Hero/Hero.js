@@ -1,4 +1,5 @@
 import React from 'react'
+import Projects from './Projects'
 
 export default function Hero() {
 
@@ -21,7 +22,7 @@ export default function Hero() {
                 EXPLORE A FEW OF MY PROJECTS BELOW
                 </p>
                 </div>
-
+                <Projects />
             </div>
         </>
     )

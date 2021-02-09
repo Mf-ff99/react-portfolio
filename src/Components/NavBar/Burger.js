@@ -23,7 +23,7 @@ margin-top: 5px;
         height: .25rem;
         border: 1px solid black;
         border-radius: 10px;
-        background-color: ${({open}) => open ? '#95b2b8' : '#ffffea'};
+        background-color: ${({open}) => open ? '#9AE5E6' : '#95b2b8'};
         transform-origin: 1px;
         transition: all .3s ease-in-out;
         transform: ${({open}) => open ? 'rotate(90deg)' : 'rotate(0deg)'};

@@ -8,7 +8,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding-right: 10px;
-font-family: 'Montserrat', sans-serif;
+/* font-family: 'Montserrat', sans-serif; */
+font-family: 'Comfortaa', cursive;
 font-weight: 600;
 font-size: 15px;
 margin-left: 20px;
@@ -170,6 +171,9 @@ export default class Nav extends React.Component {
                         <a href='https://www.linkedin.com/in/mark-j-force/' target='_blank' rel='noopener noreferrer'>
                             <i class="fab fa-linkedin fa-md"></i>
                         </a>
+            <a href='medium.com/@lyerend' target='_blank' rel='noopener noreferrer'>
+                        <i class="fab fa-medium fa-md"></i>
+            </a> 
                     </div>
 
                 </StyledLogo>

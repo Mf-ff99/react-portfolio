@@ -16,7 +16,8 @@ const UL = styled.ul`
     z-index: 1000;
     overflow: hidden;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Comfortaa', cursive;
     font-weight: 600;
     max-width: 700px;
     padding-right: 80px;
@@ -92,7 +93,12 @@ const UL = styled.ul`
         /* scroll-behavior: unset; */
 
     a {
-        color: #ffffea !important;
+        transition: .7s ease-in-out;
+        &:hover {
+            transition: .7s ease-in-out;
+            color: #9AE5E6;
+        }
+        color: #ffffea;
     }
         li {
             color: #ffffea;

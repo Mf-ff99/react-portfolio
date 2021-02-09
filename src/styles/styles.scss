@@ -1,10 +1,11 @@
 @import 'nav';
 @import 'variables';
 @import 'mixins';
+@import 'hero';
 
 .hero{
     // @include flexCenter();
     // background: $primaryBG;
-    font-size: 300px;
+    font-size: 20px;
     height: 100vh;
 }

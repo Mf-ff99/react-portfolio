@@ -102,7 +102,7 @@ export default class Nav extends React.Component {
             <NavStyled>
                 <StyledLogo>
 
-                <span className="logo"><a href='/'>Home</a></span>
+                <span className="logo"><a href='/'>Mark Force</a></span>
           
                 </StyledLogo>
                 

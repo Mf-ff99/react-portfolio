@@ -39,6 +39,23 @@ a {
         
     }
 
+    span {
+        &:nth-child(2) {
+                transition-property: font-style;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+
+            &:hover {
+                transition-property: font-style;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                color: #ffffea;
+            }
+        }
+    }
+
     .colored-logo {
         font-size: 20px;
         padding: 5px;

@@ -22,6 +22,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 200px;
   background-color: #14181e;
   color: #ffffea;
   right: 0;
@@ -32,32 +36,35 @@ header {
   min-height: 500px;
 }
 
-.hero h1 {
+.hero P {
   -webkit-margin-before: 0 !important;
           margin-block-start: 0 !important;
   -webkit-margin-after: 0 !important;
           margin-block-end: 0 !important;
+  max-width: 900px;
+  text-align: center;
+  font-size: 32px;
 }
 
 .hero .hero-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
-.hero .hero-info-container span {
+.hero .hero-info-container span span {
   margin: 30px;
-  font-size: 30px;
+  font-size: 20px;
   -webkit-transition-property: font-style;
   transition-property: font-style;
   -webkit-transition-duration: 1s;
@@ -66,9 +73,10 @@ header {
           transition-timing-function: ease;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+  width: 500px;
 }
 
-.hero .hero-info-container span:nth-child(2):hover {
+.hero .hero-info-container span span:nth-child(2):hover {
   -webkit-transition-property: font-style;
   transition-property: font-style;
   -webkit-transition-duration: 1s;
@@ -81,7 +89,16 @@ header {
   font-style: oblique;
 }
 
-.hero .hero-info-container span:nth-child(1):hover {
+.hero .hero-info-container span span:nth-child(2):before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.hero .hero-info-container span span:nth-child(1):hover {
   -webkit-transition-property: font-style;
   transition-property: font-style;
   -webkit-transition-duration: 1s;
@@ -92,6 +109,37 @@ header {
           transition-delay: 0s;
   color: #95b2b8;
   font-style: oblique;
+}
+
+.hero .hero-info-container span span:nth-child(1):before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.hero .hero-info-container span span:nth-child(3):hover {
+  -webkit-transition-property: font-style;
+  transition-property: font-style;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  color: #95b2b8;
+  font-style: oblique;
+}
+
+.hero .hero-info-container span span:nth-child(3):before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 html {

@@ -41,6 +41,8 @@ const UL = styled.ul`
     
     a {
         /* color: black !important; */
+        text-decoration: none;
+        color: #ffffea;
     }
 
     .logo-text-left a {
@@ -76,9 +78,9 @@ const UL = styled.ul`
         right: 0;
         height: 100vh;
         width: 75vw !important;
-        border-left: 1px solid black;
+        border-left: 1px solid #333;
         border-radius: 10px 10px 0 0;
-        box-shadow: 10px 10px 10px 10px whitesmoke;
+        /* box-shadow: 10px 10px 10px 10px whitesmoke; */
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
@@ -127,16 +129,6 @@ class MobileNav extends React.Component {
             <UL id='mobile-nav' open={open}>
             <li className="right-side-nav">
                 <a href="/work">NavItem</a>
-
-            </li>
-            <li className="right-side-nav">
-                <a href='/tools'>NavItem</a>
-            </li>
-            <li className="right-side-nav">
-                <a href='/jordy-klein'>NavItem</a>
-            </li>
-            <li className="right-side-nav">
-                <a href="/contact">Contact</a>
 
             </li>
             <li className="right-side-nav end">

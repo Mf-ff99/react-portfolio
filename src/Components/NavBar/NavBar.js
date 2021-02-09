@@ -4,27 +4,28 @@ import Burger from './Burger'
 
 const StyledLogo = styled.div`
 
-    display: flex;
-    align-items: center;
-    padding-right: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    img {
-        padding: 0;
-        height: 90px; 
-    }
-    
-    a {
+display: flex;
+align-items: center;
+padding-right: 10px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 15px;
+img {
+    padding: 0;
+    height: 90px; 
+}
+
+a {
+        margin-left: 20px;
         color: #ffffea;
         /* color: black !important; */
     }
-
+    
     .logo-text-left a {
         width: 100px;
         display: flex;
         flex-wrap: wrap;
-
+        
     }
 
     @media (min-width: 768px) {
@@ -37,7 +38,7 @@ const NavStyled = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 70px;
     width: 100vw;
     display: flex;
     justify-content: space-between;

@@ -14,7 +14,7 @@ font-family: 'Comfortaa', cursive;
 font-weight: 600;
 font-size: 15px;
 margin-left: 20px;
-/* margin-top: 20px; */
+padding-top: 20px;
 z-index: 10;
 @media (min-width: 658px) {
     margin-top: 40px;

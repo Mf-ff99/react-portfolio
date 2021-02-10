@@ -1,3 +1,25 @@
+@-webkit-keyframes rotateBG {
+  from {
+    -webkit-transform: skew(3deg, 3deg);
+            transform: skew(3deg, 3deg);
+  }
+  to {
+    -webkit-transform: skew(7deg, 7deg);
+            transform: skew(7deg, 7deg);
+  }
+}
+
+@keyframes rotateBG {
+  from {
+    -webkit-transform: skew(3deg, 3deg);
+            transform: skew(3deg, 3deg);
+  }
+  to {
+    -webkit-transform: skew(7deg, 7deg);
+            transform: skew(7deg, 7deg);
+  }
+}
+
 .App {
   top: 0;
   margin: 0;
@@ -37,17 +59,17 @@ header {
 }
 
 .hero .hero-bg {
-  background-image: url("https://images.unsplash.com/photo-1488866022504-f2584929ca5f?auto=format&fit=crop&w=1486&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-image: url(/src/assets/images/star-bg-3.jpg);
   background-size: cover;
   margin: 0;
   background-repeat: no-repeat;
   background-position: 0 0;
-  -webkit-transition: 2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transform: skew(4deg, 4deg);
+          transform: skew(4deg, 4deg);
   opacity: .8;
   z-index: 0;
   background-attachment: initial;
-  width: 100vw;
+  width: 90vw;
   height: 50vh;
   min-height: 500px;
 }
@@ -267,6 +289,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 .projects-container .project ul li {
@@ -289,9 +315,15 @@ header {
 }
 
 .projects-container .project img {
-  max-width: 400px;
+  max-width: 280px;
   border-radius: 5px;
   padding: 10px;
+}
+
+@media (min-width: 900px) {
+  .projects-container .project img {
+    max-width: 400px;
+  }
 }
 
 .projects-container .project .project-info-p {

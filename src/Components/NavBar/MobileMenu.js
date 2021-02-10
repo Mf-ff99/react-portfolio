@@ -111,8 +111,8 @@ const UL = styled.ul`
         }
     }
     @media (max-width: 658px) {
-        background-color: #95b2b8 !important;
-        opacity: .8;
+        background-color: #14181e !important;
+        opacity: .95;
     }
     @media (min-width: 769px) {
         li.mobile a img{

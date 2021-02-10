@@ -66,18 +66,19 @@ header {
   margin: 0;
   background-repeat: no-repeat;
   background-position: 0 0;
-  -webkit-transform: skew(4deg, 4deg);
-          transform: skew(4deg, 4deg);
   opacity: .8;
   z-index: 0;
   background-attachment: initial;
-  width: 90vw;
   height: 50vh;
+  width: 100vh;
   min-height: 500px;
 }
 
 @media (min-width: 658px) {
   .hero .hero-bg {
+    width: 90vw;
+    -webkit-transform: skew(4deg, 4deg);
+            transform: skew(4deg, 4deg);
     background-attachment: fixed;
   }
 }

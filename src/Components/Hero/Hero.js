@@ -1,4 +1,5 @@
 import React from 'react'
+import About from './About'
 import Projects from './Projects'
 
 export default function Hero() {
@@ -23,6 +24,7 @@ export default function Hero() {
                 </p>
                 </div>
                 <Projects />
+                <About />
             </div>
         </>
     )

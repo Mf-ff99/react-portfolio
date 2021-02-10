@@ -379,19 +379,53 @@ header {
 }
 
 .about span.bg-txt-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   padding-bottom: 650px;
-  font-size: 32px;
+  font-size: 19px;
   font-family: 'Comfortaa', cursive;
+  font-style: oblique;
 }
 
 .about span.bg-txt-overlay span {
   letter-spacing: 8px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.about span.bg-txt-overlay span:hover {
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+  color: #ffffea;
+  font-style: italic;
+}
+
+@media (min-width: 658px) {
+  .about span.bg-txt-overlay span {
+    letter-spacing: 12px;
+  }
 }
 
 @media (min-width: 658px) {
   .about span.bg-txt-overlay {
     padding-bottom: 550px;
+    font-size: 32px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 

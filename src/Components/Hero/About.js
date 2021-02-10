@@ -2,23 +2,6 @@ import React, { useState } from 'react';
 import TextLoop from "react-text-loop";
 
 const About = () => {
-
-    // const [textArr, setTextArr] = useState(['mobile-first development', 'innovation in web-design', 'accessibility-first development'])
-    // const [currTextArr, setCurrTextArr] = useState('elegant development')    
-    
-
-    // let i = 0
-    // const switchTextOverlay = () => {
-    //     setInterval(function() {
-    //         if(i > 3) i = 0
-    //         setCurrTextArr(textArr[i])
-    //         i++
-    //         console.log(textArr[i])
-    //     }, 8000)
-    // }
-
-    // switchTextOverlay()
-
     
     return (
         <>
@@ -27,12 +10,16 @@ const About = () => {
             <span className='bg-txt-overlay'>
                 <TextLoop
                     interval={5000}
+                    mask={true}
+                    // noWrap={false}
+                    springConfig={{ stiffness: 180, damping: 8 }}
                 >
-                    <span>mobile-first development</span>
-                    <span>accessibility-first development</span>
-                    <span>innovation in web-design</span>
-                    <span>elegant development</span>
+                    <span>mobile-first  </span>
+                    <span>accessibility-first  </span>
+                    <span>innovation in  </span>
+                    <span>elegant  </span>
                 </TextLoop>
+                <span>  development</span>
             </span>
                 <div className='about-header'>
                     <h1>About</h1>

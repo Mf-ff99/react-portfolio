@@ -385,6 +385,10 @@ header {
   font-family: 'Comfortaa', cursive;
 }
 
+.about span.bg-txt-overlay span {
+  letter-spacing: 8px;
+}
+
 @media (min-width: 658px) {
   .about span.bg-txt-overlay {
     padding-bottom: 550px;

@@ -5,7 +5,7 @@ const About = () => {
     
     return (
         <>
-            <div className='about' id='about'>
+            <div className='about'>
             <div className='hero-bg'></div>
             <span className='bg-txt-overlay'>
                 <TextLoop
@@ -21,7 +21,7 @@ const About = () => {
                 </TextLoop>
                 <span>  development</span>
             </span>
-                <div className='about-header'>
+                <div  id='about' className='about-header'>
                     <h1>About</h1>
                 </div>
                 <div className='about-info-container'>

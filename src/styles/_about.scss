@@ -33,11 +33,15 @@
         @media (min-width: 658px) {
             padding-bottom: 550px;
             font-size: 32px;
-            flex-direction: row;
+            // flex-direction: row;
             // width: 800px;
         }
     }
     .about-header h1 {
+        font-size: 64px;
+        @media (min-width: 658px) {
+            font-size: 64px;
+        }
         color: $secondary-txt;
     }
     .about-info-container {

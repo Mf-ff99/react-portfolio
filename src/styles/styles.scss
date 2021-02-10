@@ -4,15 +4,12 @@
 @import 'hero';
 @import 'projects';
 @import 'about';
+@import 'footer';
 
 html {
     overflow-x: hidden;
 }
 
-main {
-    // overflow-x: hidden;
-}
-
 .App {
-    // overflow-y: hidden;
+    height: fit-content;
 }

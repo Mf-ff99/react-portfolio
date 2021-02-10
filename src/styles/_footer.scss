@@ -1,0 +1,20 @@
+@import 'mixins';
+
+footer {
+    bottom: 0;
+    width: 100vw;
+    background-color: $primary-bg;
+    color: $primary-txt;
+    padding: 10px;
+    font-size: 13px;
+    @include flexCenter(column);
+    height: 150px;
+    font-family: 'Comfortaa', cursive;
+    @media (min-width: 658px) {
+        font-size: 22px;
+    }
+    div {
+        @include flexCenter(column)
+    }
+
+}

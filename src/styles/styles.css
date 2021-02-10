@@ -422,7 +422,7 @@ header {
 
 @media (min-width: 658px) {
   .about span.bg-txt-overlay {
-    padding-bottom: 550px;
+    padding-bottom: 640px;
     font-size: 32px;
   }
 }

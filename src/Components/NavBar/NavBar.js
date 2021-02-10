@@ -205,7 +205,7 @@ export default class Nav extends React.Component {
                         <a href='https://www.linkedin.com/in/mark-j-force/' target='_blank' rel='noopener noreferrer'>
                             <i class="fab fa-linkedin fa-md"></i>
                         </a>
-            <a href='medium.com/@lyerend' target='_blank' rel='noopener noreferrer'>
+            <a href='https://medium.com/@lyerend' target='_blank' rel='noopener noreferrer'>
                         <i class="fab fa-medium fa-md"></i>
             </a> 
                     </div>

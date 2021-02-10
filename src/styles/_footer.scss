@@ -2,16 +2,24 @@
 
 footer {
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     background-color: $primary-bg;
     color: $primary-txt;
-    padding: 10px;
+    // padding: 10px;
     font-size: 13px;
     @include flexCenter(column);
     height: 150px;
     font-family: 'Comfortaa', cursive;
     @media (min-width: 658px) {
         font-size: 22px;
+    }
+    .awesome {
+        transition: .7s ease-in-out;
+        color: $secondary-txt;
+        &:hover {
+            transition: .7s ease-in-out;
+
+        }
     }
     div {
         @include flexCenter(column)

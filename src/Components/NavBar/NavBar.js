@@ -52,6 +52,8 @@ a {
 
     span {
         /* font-size: 20px; */
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
         &:nth-child(2) {
                 transition-property: font-style;
                 transition-duration: 1s;
@@ -75,6 +77,7 @@ a {
         color: #95B2B8;
         font-style: oblique;
         letter-spacing: 2px;
+        transition: .7s ease-in-out;
         @media (max-width: 658px) {
             display: none;
         }
@@ -123,6 +126,14 @@ const NavStyled = styled.nav`
         padding-left: 10px;
         margin-top: 10px;
         /* padding: 15px 0; */
+        transition: .7s ease-in-out;
+        a {
+            transition: .7s ease-in-out;
+            &:hover {
+                transition: .7s ease-in-out;
+                color: #95b2b8;
+            }
+        }
     }
 
     ul {

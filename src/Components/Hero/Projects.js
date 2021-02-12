@@ -26,6 +26,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+            <hr />
             <div className='project img-right'>
                 <img src='/assets/images/ways-mockup.jpg' alt='Ways! Application mockup' />
                 <div className='project-info-container'>
@@ -50,6 +51,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+            <hr />
             <div className='project img-left'>
                 <span>project images</span>
                 <div className='project-info-container'>

@@ -9,10 +9,10 @@ const About = () => {
             <div className='hero-bg'></div>
             <span className='bg-txt-overlay'>
                 <TextLoop
-                    interval={5000}
+                    interval={2000}
                     mask={true}
                     // noWrap={false}
-                    springConfig={{ stiffness: 180, damping: 8 }}
+                    // springConfig={{ stiffness: 180, damping: 8 }}
                 >
                     <span>mobile-first  </span>
                     <span>accessibility-first  </span>

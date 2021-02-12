@@ -15,10 +15,10 @@ export default function Hero() {
                 <div className='hero-info-container'>
                     
                 <TextLoop
-                    interval={5000}
+                    interval={2500}
                     mask={true}
                     // noWrap={false}
-                    springConfig={{ stiffness: 120, damping: 5 }}
+                    // springConfig={{ stiffness: 120, damping: 5 }}
                 >
                     <span>Sass</span>
                     <span>ReactJS</span>

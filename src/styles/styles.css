@@ -228,6 +228,16 @@ header {
   font-family: 'Comfortaa', cursive;
 }
 
+.projects-container hr {
+  margin: 20px 0 0 20px auto;
+  margin-top: 40px;
+  width: 20%;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#95b2b8), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #95b2b8, rgba(255, 255, 255, 0));
+}
+
 .projects-container .project-info-header {
   display: -webkit-box;
   display: -ms-flexbox;

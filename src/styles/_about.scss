@@ -16,7 +16,7 @@
     span.bg-txt-overlay {
         @include flexCenter(column);
         position: absolute;
-        padding-bottom: 650px;
+        padding-bottom: 800px;
         font-size: 19px;
         // max-width: 300px;
         font-family: 'Comfortaa', cursive;
@@ -35,7 +35,7 @@
             }
         }
         @media (min-width: 658px) {
-            padding-bottom: 640px;
+            padding-bottom: 800px;
             font-size: 32px;
             // flex-direction: row;
             // width: 800px;

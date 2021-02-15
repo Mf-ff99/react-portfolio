@@ -14,10 +14,10 @@ font-family: 'Comfortaa', cursive;
 font-weight: 600;
 font-size: 15px;
 margin-left: 20px;
-padding-top: 20px;
+/* padding-top: 20px; */
 z-index: 10;
 @media (min-width: 658px) {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 img {
     padding: 0;
@@ -194,7 +194,7 @@ export default class Nav extends React.Component {
 
                     <span className="logo"><a href='/'>Mark Force</a></span>
                     <span className='colored-logo'>Full Stack Web Developer</span>
-                    <div className='contact-icons'>
+                    {/* <div className='contact-icons'>
                         <a href='mailto:force.j.mark@gmail.com'>
                             <i class="fas fa-envelope-square fa-md"></i>
                         </a>
@@ -208,7 +208,7 @@ export default class Nav extends React.Component {
             <a href='https://medium.com/@lyerend' target='_blank' rel='noopener noreferrer'>
                         <i class="fab fa-medium fa-md"></i>
             </a> 
-                    </div>
+                    </div> */}
 
                 </StyledLogo>
 

@@ -102,6 +102,12 @@ header {
           justify-content: center;
 }
 
+@media (min-width: 658px) {
+  .hero .hero-info-container {
+    margin-top: 100px;
+  }
+}
+
 .hero .hero-info-container P {
   -webkit-margin-before: 0 !important;
           margin-block-start: 0 !important;
@@ -111,6 +117,7 @@ header {
   text-align: center;
   font-size: 22px;
   padding: 7px;
+  margin-bottom: 5px;
   font-family: 'Comfortaa', cursive;
   font-weight: 600;
   color: #9AE5E6;
@@ -124,23 +131,15 @@ header {
 }
 
 .hero .hero-info-container span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   text-align: center;
 }
 
-.hero .hero-info-container span {
+.hero .hero-info-container span.__highlighted, .hero .hero-info-container a.__highlighted {
+  color: #ffffea;
+  text-decoration: none;
+}
+
+.hero .hero-info-container span.hero__highlighted {
   margin: 30px;
   font-size: 20px;
   -webkit-transition-property: font-style;
@@ -155,13 +154,13 @@ header {
 }
 
 @media (min-width: 658px) {
-  .hero .hero-info-container span {
+  .hero .hero-info-container span.hero__highlighted {
     letter-spacing: 30px;
     font-size: 32px;
   }
 }
 
-.hero .hero-info-container span:nth-child(2):hover {
+.hero .hero-info-container span.hero__highlighted:nth-child(2):hover {
   -webkit-transition-property: font-style;
   transition-property: font-style;
   -webkit-transition-duration: 1s;
@@ -174,7 +173,7 @@ header {
   font-style: oblique;
 }
 
-.hero .hero-info-container span:nth-child(1):hover {
+.hero .hero-info-container span.hero__highlighted:nth-child(1):hover {
   -webkit-transition-property: font-style;
   transition-property: font-style;
   -webkit-transition-duration: 1s;
@@ -187,7 +186,7 @@ header {
   font-style: oblique;
 }
 
-.hero .hero-info-container span:nth-child(3):hover {
+.hero .hero-info-container span.hero__highlighted:nth-child(3):hover {
   -webkit-transition-property: font-style;
   transition-property: font-style;
   -webkit-transition-duration: 1s;
@@ -233,6 +232,8 @@ header {
   margin-top: 40px;
   width: 20%;
   border: 0;
+  -webkit-transform: skewY(-4deg);
+          transform: skewY(-4deg);
   height: 1px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#95b2b8), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #95b2b8, rgba(255, 255, 255, 0));
@@ -470,7 +471,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  padding-bottom: 650px;
+  padding-bottom: 800px;
   font-size: 19px;
   font-family: 'Comfortaa', cursive;
   font-style: oblique;
@@ -497,7 +498,7 @@ header {
 
 @media (min-width: 658px) {
   .about span.bg-txt-overlay {
-    padding-bottom: 640px;
+    padding-bottom: 800px;
     font-size: 32px;
   }
 }

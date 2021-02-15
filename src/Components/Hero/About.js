@@ -31,8 +31,11 @@ const About = () => {
                 <div className='about-info-container'>
                     <p><span>Hello!</span> I'm a <span className='highlighted__span'>software engineer</span> and <span className='highlighted__span'>full stack developer</span>. I am skilled in Python, Javascript, CSS, and HTML programming. I've always been in love with programming, from Scratch to Fullstack Web Development there are few things I enjoy in life more than coding.
                 </p>
+                <p>
+                     I am fluent with numerous frameworks and languages including <span className='highlighted__span'>frameworks</span> and <span className='highlighted__span'>programming languages</span> such as <span className='highlighted__span'>ReactJS</span>, <span className='highlighted__span'>Gatsby</span>, <span className='highlighted__span'>Express.js</span>, and <span className='highlighted__span'>jQuery</span>.
+                </p>
                     <p>
-                        I love minimalism as well as brutalism in web design, if you have any questions, or wish to message me, hit me up on any one of my social links.
+                        I love minimalism as well as brutalism in web design. If you have any questions, or wish to message me, hit me up on any one of my social links.
                     </p>
                 </div>
             </div>

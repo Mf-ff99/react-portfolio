@@ -10,8 +10,10 @@ const Projects = () => {
                 <div className='project-info-container'>
                     <div className='project-info-header'>
                         <h3>Jordan Klein Film & Video</h3>
-                        <span>Live App</span>
-                        <span>Github</span>
+                        <div>
+                            <span><a href='https://www.jordy.com/' target='_blank' rel='noopener noreferrer'>Live App</a></span>
+                            <span><a href='https://github.com/Mf-ff99/jkfv' target='_blank' rel='noopener noreferrer'>Github</a></span>
+                        </div>
                     </div>
                     <div className='project-tech'>
                         <ul>
@@ -33,8 +35,9 @@ const Projects = () => {
                     <div className='project-info-header'>
                         <h3>Ways! | A Travel Companion</h3>
                         <div>
-                            <span>Live App</span>
-                            <span>Github</span>
+                            <span><a href='https://ways-client.vercel.app/' target='_blank' rel='noopener noreferrer'>Live App</a></span>
+                            <span><a href='https://github.com/wzeiher3/trip-client' target='_blank' rel='noopener noreferrer'>Github</a></span>
+
                         </div>
                     </div>
                     <div className='project-tech'>
@@ -47,18 +50,21 @@ const Projects = () => {
                         </ul>
                     </div>
                     <div className='project-info-p'>
-                        A gorgeous and user-first web application, Ways! is designed to meet the needs of those who travel often and plan ahead. Built from the ground up utilizing ReactJS, JavaScript, vanilla CSS, Node.js, and Express, this application was developed by myself and a team of three others over the course of three weeks.
+                        A gorgeous and user-first web application, Ways! is designed to meet the needs of those who travel often and plan ahead. Ways! was developed by a team of four over the course of three weeks.
                     </div>
                 </div>
             </div>
             <hr />
             <div className='project img-left'>
-                <span>project images</span>
+            <img src='/assets/images/lj-mockup.jpg' alt='Lightning Jib Application mockup' />
                 <div className='project-info-container'>
                     <div className='project-info-header'>
-                        <h3>Lightning Jib | Innovation in Motion</h3>
-                        <span>Live App</span>
-                        <span>Github</span>
+                        <h3>Lightning Jib | Camera Innovation</h3>
+                        <div>
+
+                            <span><a href='https://lightning-jib-git-master.mf-ff99.vercel.app/' target='_blank' rel='noopener noreferrer'>Live App</a></span>
+                            <span><a href='https://github.com/Mf-ff99/lightning-jib' target='_blank' rel='noopener noreferrer'>Github</a></span>
+                        </div>
                     </div>
                     <div className='project-tech'>
                         <ul>
@@ -69,7 +75,7 @@ const Projects = () => {
                         </ul>
                     </div>
                     <div className='project-info-p'>
-                        The first of its kind, lightningjib.com showcases
+                        The first of its kind, Lightning Jib is an innovative take on camera jibs. Utilizing an entirely SCSS-created parallax background, LightningJib.com is a creative take on camera crane advertisement.
                     </div>
                 </div>
             </div>

@@ -391,13 +391,17 @@ header {
 
 @media (min-width: 900px) {
   .projects-container .project img {
-    max-width: 400px;
+    max-width: 420px;
   }
+}
+
+.projects-container .project h3 {
+  padding: 5px;
 }
 
 .projects-container .project .project-info-p {
   text-align: left;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 @media (min-width: 658px) {

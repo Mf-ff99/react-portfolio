@@ -69,10 +69,9 @@ header {
   background-position: 0 0;
   opacity: .8;
   z-index: 0;
-  background-attachment: initial;
+  background-attachment: fixed;
   height: 50vh;
   width: 100vh;
-  min-height: 500px;
 }
 
 @media (min-width: 658px) {
@@ -86,6 +85,7 @@ header {
 
 .hero .hero-info-container {
   margin-top: 50px;
+  padding-bottom: 5px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,8 +232,6 @@ header {
   margin-top: 40px;
   width: 20%;
   border: 0;
-  -webkit-transform: skewY(-4deg);
-          transform: skewY(-4deg);
   height: 1px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#95b2b8), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #95b2b8, rgba(255, 255, 255, 0));
@@ -471,7 +469,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  padding-bottom: 800px;
+  padding-bottom: 920px;
   font-size: 19px;
   font-family: 'Comfortaa', cursive;
   font-style: oblique;
@@ -591,5 +589,6 @@ html {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: #14181e;
 }
 /*# sourceMappingURL=styles.css.map */

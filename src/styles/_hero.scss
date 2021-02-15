@@ -49,11 +49,12 @@ header {
         background-position: 0 0;
         //  transition: 2s cubic-bezier(0.645, 0.045, 0.355, 1);
         opacity: .8;
+        // scroll-behavior: none;
         z-index: 0;
-        background-attachment: initial;
+        background-attachment: fixed;
         height: 50vh;
         width: 100vh;
-        min-height: 500px;
+        // min-height: 500px;
         //  animation: rotateBG 30s infinite;
         //  transition: 120s ease-in-out;
         @media (min-width: 658px) {
@@ -66,6 +67,7 @@ header {
     }
     .hero-info-container {
         margin-top: 50px;
+        padding-bottom: 5px;
         position: absolute;
         display: flex;
         flex-direction: column;

@@ -395,6 +395,10 @@ header {
   min-height: 1200px;
 }
 
+.about .highlighted__span {
+  color: #ffffea !important;
+}
+
 .about span.bg-txt-overlay {
   display: -webkit-box;
   display: -ms-flexbox;

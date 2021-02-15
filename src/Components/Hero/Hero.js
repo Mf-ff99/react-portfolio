@@ -15,7 +15,7 @@ export default function Hero() {
                 <div className='hero-info-container'>
                     
                 <TextLoop
-                    interval={2500}
+                    interval={2000}
                     mask={true}
                     // noWrap={false}
                     // springConfig={{ stiffness: 120, damping: 5 }}
@@ -23,6 +23,7 @@ export default function Hero() {
                     <span>Sass</span>
                     <span>ReactJS</span>
                     <span>JavaScript</span>
+                    <span>Gatsby</span>
                     <span>Node.js</span>
                     <span>PostgreSQL</span>
                     <span>Express.js</span>

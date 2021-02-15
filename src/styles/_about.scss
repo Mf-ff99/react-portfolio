@@ -9,6 +9,10 @@
     height: 100vh;
     min-height: 1200px;
     // bottom: 0;
+
+    .highlighted__span {
+        color: $primary-txt !important;
+    }
     span.bg-txt-overlay {
         @include flexCenter(column);
         position: absolute;

@@ -24,13 +24,7 @@ img {
     height: 90px; 
 }
 
-.contact-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 200px;
-}
+
 
 a {
         /* margin-left: 20px; */
@@ -87,15 +81,7 @@ a {
         }
     }
 
-    i {
-
-        transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
-        border-radius: 50px;
-        &:hover {
-            transition: 2s cubic-bezier(0.215, 0.610, 0.355, 1);
-            transform: rotate(720deg);
-        }
-    }
+  
 
     @media (min-width: 768px) {
         /* display: none !important; */
@@ -110,8 +96,8 @@ const NavStyled = styled.nav`
     height: 80px;
     width: 100vw;
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
     list-style: none;
     /* width: 90%; */
@@ -135,6 +121,34 @@ const NavStyled = styled.nav`
             }
         }
     }
+    .contact-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 200px;
+        
+        a {
+            color: #ffffea;
+        font-size: 30px;
+        @media (min-width: 658px) {
+            font-size: 40px;
+        }
+    }
+        i {
+    
+    transition: .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    border-radius: 50px;
+    &:hover {
+        transition: .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        /* transform: rotate(720deg); */
+        color: #95b2b8;
+    }
+    }
+    @media (max-width: 658px) {
+        display: none;
+    }
+}
 
     ul {
         list-style: none;
@@ -211,6 +225,21 @@ export default class Nav extends React.Component {
                     </div> */}
 
                 </StyledLogo>
+                <div className='contact-icons'>
+                        <a href='mailto:force.j.mark@gmail.com'>
+                            <i class="fas fa-envelope-square fa-md"></i>
+                        </a>
+
+                        <a href='https://github.com/Mf-ff99' target='_blank' rel='noopener noreferrer'>
+                            <i class="fab fa-github-square fa-md"></i>
+                        </a>
+                        <a href='https://www.linkedin.com/in/mark-j-force/' target='_blank' rel='noopener noreferrer'>
+                            <i class="fab fa-linkedin fa-md"></i>
+                        </a>
+            <a href='https://medium.com/@lyerend' target='_blank' rel='noopener noreferrer'>
+                        <i class="fab fa-medium fa-md"></i>
+            </a> 
+                    </div>
 
                 <Burger />
 

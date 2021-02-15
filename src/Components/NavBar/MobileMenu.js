@@ -12,6 +12,7 @@ const UL = styled.ul`
     justify-content: space-between;
     width: 100vh;
     // min-height: 800px;
+    margin-top: 150px;
     margin-left: 0;
     padding-left: 0;
     z-index: 1000;
@@ -81,6 +82,7 @@ const UL = styled.ul`
         transform: ${({open}) => open ? 'translateY(0%)' : 'translateY(-100%)'};
         /* top: 0; */
         right: 0;
+        margin-top: 150px;
         height: 350px;
         width: 200px !important;
         border-radius: 0 0 2px 20px;

@@ -25,4 +25,33 @@ footer {
         @include flexCenter(column)
     }
 
+    
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 200px;
+    padding: 10px; 
+    // padding-bottom: 20px;
+    a {
+        font-size: 32px;
+        @media (min-width: 658px) {
+        font-size: 40px;
+    }
+}
+    i {
+        color: $secondary-txt;
+        transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+        border-radius: 50px;
+        &:hover {
+            transition: 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+            transform: rotate(720deg);
+            color: $primary-txt;
+        }
+    }
+}
+
+
+
 }

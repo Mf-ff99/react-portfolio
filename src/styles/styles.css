@@ -581,8 +581,55 @@ footer div {
           flex-direction: column;
 }
 
+footer .contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 200px;
+  padding: 10px;
+}
+
+footer .contact-icons a {
+  font-size: 32px;
+}
+
+@media (min-width: 658px) {
+  footer .contact-icons a {
+    font-size: 40px;
+  }
+}
+
+footer .contact-icons i {
+  color: #95b2b8;
+  -webkit-transition: 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 50px;
+}
+
+footer .contact-icons i:hover {
+  -webkit-transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  color: #ffffea;
+}
+
 html {
   overflow-x: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #14181e;
 }
 
 .App {

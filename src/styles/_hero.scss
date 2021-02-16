@@ -53,14 +53,15 @@ header {
         z-index: 0;
         background-attachment: initial;
         height: 50vh;
+        min-height: 450px;
         width: 100vh;
         // min-height: 500px;
         //  animation: rotateBG 30s infinite;
         //  transition: 120s ease-in-out;
         @media (min-width: 658px) {
             width: 90vw;
-      transform: skew(4deg, 4deg);
-      background-attachment: fixed;
+            transform: skew(4deg, 4deg);
+            background-attachment: fixed;
   }
 //   position: fixed;
 

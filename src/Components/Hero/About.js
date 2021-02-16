@@ -6,7 +6,10 @@ const About = () => {
     return (
         <>
             <div className='about'>
-            <div className='hero-bg'></div>
+            <div className='hero-bg'>
+
+                
+            </div>
             <span className='bg-txt-overlay'>
                 <TextLoop
                     interval={2000}

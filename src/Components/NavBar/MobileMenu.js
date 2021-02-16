@@ -69,7 +69,7 @@ const UL = styled.ul`
         
     }
 
-    @media (max-width: 2000px) {
+    @media (max-width: 8500px) {
         /* display: none !important; */
         /* min-height: 400px; */
         display: flex;
@@ -83,7 +83,7 @@ const UL = styled.ul`
         /* top: 0; */
         right: 0;
         margin-top: 150px;
-        height: 350px;
+        height: 250px;
         width: 200px !important;
         border-radius: 0 0 2px 20px;
         border: 1px 0 0 1px solid #333;

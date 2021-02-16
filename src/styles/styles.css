@@ -69,7 +69,7 @@ header {
   background-position: 0 0;
   opacity: .8;
   z-index: 0;
-  background-attachment: fixed;
+  background-attachment: initial;
   height: 50vh;
   width: 100vh;
 }
